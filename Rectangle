@@ -1,0 +1,25 @@
+package pl.waw.sgh.shapes;
+
+public class Rectangle extends Shape {
+
+
+    public Rectangle(double parA, double parB) {
+        super(parA, parB); //calls the constructor of super-class, the constructor of "Shape"
+    }
+
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "parA=" + parA +
+                ", parB=" + parB +
+                '}';
+    }
+
+    public double calcSurface () {
+        return parA*parB; //refers to parameters in Shape
+
+
+    }
+
+}
